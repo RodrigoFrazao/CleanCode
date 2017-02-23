@@ -1,8 +1,8 @@
+import models.Customer;
+import models.LoyaltyCard;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by wouterba on 23/02/2017.
@@ -25,7 +25,6 @@ public class CustomerRepoTest {
     public void findByBarcode_returnsExpectedCustomer() throws Exception {
         Customer customer = new Customer(1, "Wouter", new LoyaltyCard(1, 0));
         repo.addCustomer(customer);
-        Assertions.assertThat(repo.findByBarcode(1).get()).isEqualTo(customer);git
+        Assertions.assertThat(repo.findByBarcode(1).get()).isEqualTo(customer);
     }
-
 }
