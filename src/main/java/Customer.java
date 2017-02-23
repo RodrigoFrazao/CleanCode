@@ -1,13 +1,13 @@
 /**
  * Created by rodrPMFF on 23/02/2017.
  */
-public class Costumer {
+public class Customer {
 
     private long id;
     private String name;
     private LoyaltyCard personalCard;
 
-    public Costumer(long id, String name, LoyaltyCard personalCard) {
+    public Customer(long id, String name, LoyaltyCard personalCard) {
         this.id = id;
         this.name = name;
         this.personalCard = personalCard;

@@ -29,7 +29,7 @@ idea {
 }
 
 jar {
-    baseName = 'bibliothouris'
+    baseName = 'CleanCode'
     version = version
     manifest {
         attributes 'Implementation-Version': version
