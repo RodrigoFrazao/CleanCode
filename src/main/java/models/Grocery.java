@@ -9,6 +9,8 @@ public class Grocery {
     private LocalDate dateDelivered;
     private String description;
 
+
+
     public Grocery(String description, LocalDate date) {
         this.description = description;
         this.dateDelivered = date;
@@ -16,5 +18,20 @@ public class Grocery {
 
     public LocalDate getDate() {
         return dateDelivered;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Grocery grocery = (Grocery) o;
+
+        return description.equals(grocery.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return description.hashCode();
     }
 }

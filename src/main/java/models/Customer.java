@@ -1,5 +1,11 @@
 package models;
 
+import repos.GroceryRepo;
+
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by rodrPMFF on 23/02/2017.
  */
@@ -8,6 +14,7 @@ public class Customer {
     private long id;
     private String name;
     private LoyaltyCard personalCard;
+    private GroceryRepo groceryRepo;
 
     public Customer(long id, String name, LoyaltyCard personalCard) {
         this.id = id;
@@ -35,4 +42,6 @@ public class Customer {
 
         return personalCard.getBarcode();
     }
+
+
 }

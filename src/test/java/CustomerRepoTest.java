@@ -3,6 +3,7 @@ import models.LoyaltyCard;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
+import repos.CustomerRepo;
 
 /**
  * Created by wouterba on 23/02/2017.
